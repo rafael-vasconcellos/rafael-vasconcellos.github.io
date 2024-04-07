@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .selected {
+      @apply border-b-primary border-b-2 border-solid text-primary;
+      /* border-r-0 border-l-0 border-t-0 */
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+:root {
+    --primary-color: #4493f8
+}
+
+body { 
+    background-color: #0D1117;
+    color: white;
+}
+
+.expand {
+    transition: width 1s ease-in-out
+}

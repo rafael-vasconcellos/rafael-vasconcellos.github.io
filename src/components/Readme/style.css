@@ -1,0 +1,43 @@
+:root {
+    --borderColor-muted: #30363db3;
+    --bgColor-muted: #161b22;
+}
+
+.expand h1 { 
+    padding-bottom: .3em;
+    font-size: 2em;
+    border-bottom: 1px solid var(--borderColor-muted);
+    line-height: 1.25;
+}
+
+.expand h2 { 
+    padding-bottom: .3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--borderColor-muted);
+}
+
+.expand h3 {
+    font-size: 1.25em;
+}
+
+.expand h4 {
+    font-size: 1em;
+}
+
+.expand h1, h2, h3, h4, h5, h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.expand pre {
+    margin: 18px 0;
+    padding: 0 12px;
+}
+
+.expand a {
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+    color: #4493f8
+}
