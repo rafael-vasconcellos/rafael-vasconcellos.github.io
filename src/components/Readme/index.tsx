@@ -3,6 +3,7 @@ import { SolidMarkdown } from "solid-markdown"
 import hljs from 'highlight.js/lib/core';
 import typescript from 'highlight.js/lib/languages/typescript';
 import bash from 'highlight.js/lib/languages/bash'
+import rehypeRaw from 'rehype-raw';
 import 'highlight.js/styles/base16/dark-violet.css';
 import './style.css'
 
@@ -11,15 +12,15 @@ import './style.css'
 hljs.registerLanguage('typescript', typescript);
 hljs.registerLanguage('bash', bash);
 
-export default function Readme( {name}: { name?: string } ) { 
+export default function Readme( {repoName}: { repoName?: string } ) { 
     const [ content, setReadmeContent ] = createSignal<string>()
     const [ toggle, setToggle ] = createSignal(false)
     let button: HTMLButtonElement | undefined
 
 
     createEffect( async() => { 
-        if (!content() && toggle() && name) { 
-            const link = `https://api.github.com/repos/rafael-vasconcellos/${name}/readme`
+        if (!content() && toggle() && repoName) { 
+            const link = `https://api.github.com/repos/rafael-vasconcellos/${repoName}/readme`
             const download_url = await fetch(link).then(response => { 
                 if (response.status === 200) { return response.json() }
             })
@@ -28,6 +29,9 @@ export default function Readme( {name}: { name?: string } ) {
             if(download_url) { 
                 fetch(download_url)
                 .then(response => response.text())
+                .then(response => { 
+                    return response.replaceAll("assets/", `https://raw.githubusercontent.com/rafael-vasconcellos/${repoName}/main/assets/`)
+                })
                 .then(response => setReadmeContent(response))
                 .then(() => hljs.highlightAll())
 
@@ -62,7 +66,7 @@ export default function Readme( {name}: { name?: string } ) {
                             <p class="w-[75%] h-5 bg-gray-800 animate-pulse"></p>
                         </div>
                     }>
-                        <SolidMarkdown children={content()} />
+                        <SolidMarkdown rehypePlugins={[rehypeRaw as any]} children={content()} />
                     </Show>
                 </Show>
             </div>

@@ -32,7 +32,7 @@ const Repository = function( { repo }: {repo?: IGithubRepo} ) {
                     <b class="text-primary mx-1">Deploy link:</b> <a class="hover:underline hover:decoration-solid" target="_blank" href={repo?.homepage ?? ''}>{repo?.homepage}</a>
                 </div>
             </Show>
-            {repo?.name && <Readme name={repo?.name} />}
+            {repo?.name && <Readme repoName={repo?.name} />}
         </div>
     )
 }
