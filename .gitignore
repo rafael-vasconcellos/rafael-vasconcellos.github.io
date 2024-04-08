@@ -11,8 +11,6 @@ lerna-debug.log*
 .vite
 node_modules
 output
-dist
-dist-ssr
 *.local
 
 # Editor directories and files
