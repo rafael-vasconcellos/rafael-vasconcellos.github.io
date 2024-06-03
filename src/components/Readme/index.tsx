@@ -56,7 +56,7 @@ export default function Readme( {repoName}: { repoName?: string } ) {
                 </button>
             </div>
 
-            <div class="expand">
+            <div class="expand py-2">
                 <Show when={toggle()}>
                     <Show when={content()} fallback={ 
                         <div class="flex flex-col gap-3">
@@ -66,6 +66,10 @@ export default function Readme( {repoName}: { repoName?: string } ) {
                             <p class="w-[75%] h-5 bg-gray-800 animate-pulse"></p>
                         </div>
                     }>
+                        <Show when={repoName==="soundplayer"}>
+                            <iframe src="https://soundplayer.vercel.app/?p=playmaker-356484228/sets/s22" frameborder="0" 
+                             class="py-3 mb-4" height="125" width="400"></iframe>
+                        </Show>
                         <SolidMarkdown rehypePlugins={[rehypeRaw as any]} children={content()} />
                     </Show>
                 </Show>
@@ -73,3 +77,4 @@ export default function Readme( {repoName}: { repoName?: string } ) {
         </div>
     )
 }
+
