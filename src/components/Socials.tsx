@@ -2,14 +2,14 @@ export default function Socials() {
     return (
         <div class="w-full absolute bottom-0 flex gap-3 justify-center my-6">
 
-            <a href="https://github.com/rafael-vasconcellos">
+            <a href="https://github.com/rafael-vasconcellos" target="_blank">
                 <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" 
                 class="text-zinc-400">
                     <path class='fill-zinc-400' d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
                 </svg>
             </a>
 
-            <a href="https://leetcode.com/rafael-vasconcellos/">
+            <a href="https://leetcode.com/rafael-vasconcellos/" target="_blank">
                 <svg width="95" height="111" viewBox="0 0 95 111" xmlns="http://www.w3.org/2000/svg" 
                 class="h-6 w-6 max-w-none fill-zinc-400">
                     <path class="fill-zinc-400" d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z"></path>
@@ -18,7 +18,7 @@ export default function Socials() {
                 </svg>
             </a>
 
-            <a href="https://www.linkedin.com/in/rafael-vasconcelos-1b4298311/">
+            <a href="https://www.linkedin.com/in/rafael-vasconcelos-1b4298311/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" aria-labelledby="a2jwel4kauiospv5yifw9xj1zxoyz54v"
                  class="h-6 w-6 max-w-none fill-zinc-400" fill="none">
                     <title id="a2jwel4kauiospv5yifw9xj1zxoyz54v">LinkedIn</title>
@@ -28,7 +28,7 @@ export default function Socials() {
                 </svg>
             </a>
 
-            <a href="https://www.instagram.com/rafael.vasconcellos_/">
+            <a href="https://www.instagram.com/rafael.vasconcellos_/" target="_blank">
                 <svg class="w-6 h-6 fill-zinc-400" version="1.0" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
@@ -55,7 +55,7 @@ export default function Socials() {
 
             </a>
 
-            <a href="https://open.spotify.com/user/6u16d5sua58duipkgpoupnimh">
+            <a href="https://open.spotify.com/user/6u16d5sua58duipkgpoupnimh" target="_blank">
                 <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
                 class="w-6 h-6 fill-zinc-400">
                     <path d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zm5.045 15.866a.686.686 0 0 1-.943.228c-2.583-1.579-5.834-1.935-9.663-1.06a.686.686 0 0 1-.306-1.337c4.19-.958 7.785-.546 10.684 1.226a.686.686 0 0 1 .228.943zm1.346-2.995a.858.858 0 0 1-1.18.282c-2.956-1.817-7.464-2.344-10.961-1.282a.856.856 0 0 1-1.11-.904.858.858 0 0 1 .611-.737c3.996-1.212 8.962-.625 12.357 1.462a.857.857 0 0 1 .283 1.179zm.116-3.119c-3.546-2.106-9.395-2.3-12.78-1.272a1.029 1.029 0 0 1-.597-1.969c3.886-1.18 10.345-.952 14.427 1.471a1.029 1.029 0 0 1-1.05 1.77z"></path>
