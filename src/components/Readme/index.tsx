@@ -46,7 +46,7 @@ export default function Readme( {repoName}: { repoName?: string } ) {
 
     return(
         <div>
-            <div class="px-8 my-2 flex justify-between items-center">
+            <div class="px-1 my-2 flex justify-between items-center">
                 <b>README</b>
                 <button class="bg-zinc-500 p-2 rounded-full"
                 ref={button} onClick={() => { setToggle(!toggle()) }}>
@@ -56,7 +56,7 @@ export default function Readme( {repoName}: { repoName?: string } ) {
                 </button>
             </div>
 
-            <div class="expand py-2">
+            <div class="expand py-2 px-6">
                 <Show when={toggle()}>
                     <Show when={content()} fallback={ 
                         <div class="flex flex-col gap-3">
