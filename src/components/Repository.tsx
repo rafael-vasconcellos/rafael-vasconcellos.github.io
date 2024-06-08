@@ -9,7 +9,7 @@ const Repository = function( { repo }: {repo?: IGithubRepo} ) {
     const animate = repo? "" : "animate-pulse"
 
     return (
-        <div class={`w-[750px] min-h-44 p-4 ${animate} rounded-3xl flex flex-col gap-3 text-white`} style={ {"background-color": "#161B22"} }>
+        <div class={`min-w-full min-h-44 p-4 ${animate} rounded-3xl flex flex-col gap-3 bg-secondary text-white`}>
             <a class="text-2xl inter text-primary" target="_blank" href={repo?.html_url}>{repo?.name}</a>
             <p class="text-zinc-400 max-w-[533px] mb-2">{repo?.description}</p>
             <div class="flex gap-3 px-3 flex-wrap">

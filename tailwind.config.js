@@ -3,8 +3,9 @@ export default {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
-        textColor: {
-            primary: "#4493f8"
+        colors: {
+            primary: "#4493f8",
+            secondary: "#161B22"
         },
         backgroundColor: {
             primary: "#4493f8",
@@ -14,7 +15,10 @@ export default {
             primary: "#4493f8"
         }, 
 
-        
+        animation: { 
+            slideLeft: "slideLeft ease-in-out .4s"
+        }
+
     },
   },
 

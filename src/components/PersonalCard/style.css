@@ -1,0 +1,26 @@
+.teste {
+    animation: slideLeft ease-in-out 1s;
+}
+
+button:focus-visible { 
+    outline: 0;
+}
+
+div.bg-secondary ~ button { 
+    display: none;
+}
+
+.min-h-screen > section > button:hover {
+    background-color: var(--primary-color);
+}
+
+@keyframes slideLeft { 
+    from { transform: translate(-65%); }
+    to { transform: translate(0px); }
+}
+
+@media screen and (max-width: 836px) {
+    .min-h-screen > section > button { 
+        display: flex;
+    }
+}
