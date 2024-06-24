@@ -14,7 +14,7 @@ const Repository = function( { repo }: {repo?: IGithubRepo} ) {
             <p class="text-zinc-400 max-w-[533px] mb-2">{repo?.description}</p>
             <div class="flex gap-3 px-3 flex-wrap">
                 <For each={repo?.topics}>
-                    {topic => <span class="px-2 rounded-xl text-nowrap text-primary bg-primary/25">{topic}</span>}
+                    {topic => <span class="text-primary bg-primary/25 rounded-xl px-2 text-nowrap cursor-default hover:bg-primary hover:text-white">{topic}</span>}
                 </For>
             </div>
 

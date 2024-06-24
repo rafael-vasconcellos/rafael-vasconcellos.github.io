@@ -1,6 +1,10 @@
-export default function Socials() { 
+import { JSX } from "solid-js/jsx-runtime";
+
+
+export default function Socials( {class: className}: JSX.HTMLAttributes<HTMLDivElement> ) { 
+
     return (
-        <div class="w-full absolute bottom-0 flex gap-3 justify-center my-6">
+        <div class={`w-full ${className} flex gap-3 justify-center my-6`}>
 
             <a href="https://github.com/rafael-vasconcellos" target="_blank">
                 <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" 

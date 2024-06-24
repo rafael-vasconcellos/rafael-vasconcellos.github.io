@@ -3,6 +3,7 @@ import Repository from '../components/Repository'
 import Tab from '../components/Tab'
 import PersonalCard from '../components/PersonalCard'
 import { IGithubRepo } from '../IGithubRepo'
+import Footer from '../components/Footer'
 
 
 
@@ -54,16 +55,13 @@ export default function App() {
   })
 
   return ( 
-      <main class='h-auto min-h-screen flex'>
-            <section class={`h-[600px] py-8 px-4 sticky top-0 flex items-center`}>
-                <PersonalCard />
-            </section>
-
+      <>
+        <main class='h-auto min-h-screen mb-12 flex'>
             <section class='w-full h-full px-11 min-w-[360px] flex flex-col items-center'>
                 <nav class='px-2 py-4 mb-5 text-zinc-400'>
-                    <Tab name='front-end' visibility={1} />
-                    <Tab name='server-side' visibility={2} />
-                    <Tab name='others' visibility={3} />
+                    <Tab name='front-end projects' visibility={1} />
+                    <Tab name='server-side projects' visibility={2} />
+                    <Tab name='others projects' visibility={3} />
                 </nav>
                 <section class='py-8 flex flex-col gap-8'>
                     <For each={list()}>
@@ -71,7 +69,13 @@ export default function App() {
                     </For>
                 </section>
             </section>
-      </main>
+
+            <section class={`h-[600px] py-8 pr-8 sticky top-0 flex items-center`}>
+                <PersonalCard />
+            </section>
+        </main>
+        <Footer />
+      </>
   )
 }
 
