@@ -34,23 +34,24 @@ export default function App() {
               return repo.topics.some(topic => topic==="front-end" || topic==="landing-page")
 
           }).sort( (b, a) => b.topics.length>a.topics.length? -1 : 0)
-
-          if ( !list().includes(front_end_list[0]) ) { setList(front_end_list) }
+          if (list()?.length !== front_end_list?.length) { setList(front_end_list) }
 
       } else if (visibility()===2) {
           const server_side_list = repos().filter(repo => repo.topics.includes("server-side"))
           .sort( (b, a) => b.topics.length>a.topics.length? -1 : 0)
-          if ( !list().includes(server_side_list[0]) ) { setList(server_side_list) }
+          if (list()?.length !== server_side_list?.length) { setList(server_side_list) }
 
-      } else if (visibility()===3) {
-          const others_list = repos().filter(repo => { 
+      } else if (visibility()===3) { 
+          const condition = (repo: IGithubRepo) => { 
               const cond1 = !repo.topics.includes("front-end")
               const cond2 = !repo.topics.includes("landing-page")
               const cond3 = !repo.topics.includes("server-side")
               return (cond1 && cond2 && cond3)
-          })
+          }
+
+          const others_list = repos().filter(repo => condition(repo))
           .sort( (b, a) => b.topics.length>a.topics.length? -1 : 0)
-          if ( !list().includes(others_list[0]) ) { setList(others_list) }
+          if (list()?.length !== others_list?.length) { setList(others_list) }
       }
   })
 
