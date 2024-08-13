@@ -33,7 +33,16 @@ export default function App() {
           const front_end_list = repos().filter(repo => { 
               return repo.topics.some(topic => topic==="front-end" || topic==="landing-page")
 
-          }).sort( (b, a) => b.topics.length>a.topics.length? -1 : 0)
+          }).sort( (b, a) => b.topics?.length>a.topics?.length? -1 : 0)
+          .sort((b, a) => { 
+            if (a.topics?.length===b.topics?.length) { 
+                if (b.homepage && !a.homepage) { return -1 }
+                const n = Math.round(Math.random())
+                return n? -1 : 0
+            }
+
+            return 0
+          })
           if (list()?.length !== front_end_list?.length) { setList(front_end_list) }
 
       } else if (visibility()===2) {
