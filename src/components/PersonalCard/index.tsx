@@ -47,8 +47,8 @@ export default function PersonalCard() {
                         <h1 class="text-xl font-bold my-1">Sobre</h1>
                         <p>Dev Fullstack - Formado em Análise e Desenvolvimento de Sistemas pela Unigranrio em 2023/2</p>
                         <div class="py-3">
-                            <h1 class="text-xl font-bold my-1">Techs</h1>
-                            <div class="my-4 flex justify-center gap-1">
+                            <h1 class="text-xl font-bold my-2">Techs</h1>
+                            <div class="flex justify-center gap-1">
                                 <img alt="Python" title="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" />
                                 <img alt="Java" title="Java" height="50" width="30" style="padding: 0 4px" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/java/java-original.svg" />
                                 <img alt="Go" title="Go" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/go/go-original-wordmark.svg" />
