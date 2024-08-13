@@ -46,7 +46,7 @@ export default function PersonalCard() {
 
                         <h1 class="text-xl font-bold my-1">Sobre</h1>
                         <p>Dev Fullstack - Formado em Análise e Desenvolvimento de Sistemas pela Unigranrio em 2023/2</p>
-                        <div class="py-2">
+                        <div class="py-3">
                             <h1 class="text-xl font-bold my-1">Techs</h1>
                             <div class="my-4 flex justify-center gap-1">
                                 <img alt="Python" title="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" />

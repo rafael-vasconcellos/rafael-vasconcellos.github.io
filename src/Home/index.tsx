@@ -37,6 +37,7 @@ export default function App() {
           .sort((b, a) => { 
             if (a.topics?.length===b.topics?.length) { 
                 if (b.homepage && !a.homepage) { return -1 }
+                else if (a.homepage && !b.homepage) { return 0 }
                 const n = Math.round(Math.random())
                 return n? -1 : 0
             }
